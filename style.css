@@ -10,10 +10,10 @@
     font-family: "Optima", sans-serif;
 }
 :root {
-    --bg-color: #374785; /*#4949498*/
-    --second-bg-color: #495ca7; /*#7c7c7c*/
-    --text-color: white; /*#white*/
-    --main-color: #A8D0E6; /*#pink*/
+    --bg-color: #374785;          /*#4949498*/
+    --second-bg-color: #495ca7;   /*#7c7c7c*/
+    --text-color: white;          /*#white*/
+    --main-color: #A8D0E6;        /*#pink*/
     --icon-color: pink;
 }
 html {
@@ -46,7 +46,12 @@ body {
 }
 .logo:hover {transform: scale(1.1);}
 .logo span{text-shadow: 0 0 25px var(--icon-color);}
-.navbar a{
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar a {
     font-size: 1.8rem;
     color: var(--text-color);
     margin-left: 4rem;
@@ -59,11 +64,13 @@ body {
     color: var(--icon-color);
     border-bottom: 3px solid var(--icon-color);
 }
-#menu-icon {
-    font-size: 3.6rem;
+#menu-icon {                    /* Dropdown menu icon */
+    font-size: 3.6rem; 
     color: var(--icon-color);
     display: none;
+    cursor: pointer;
 }
+.navbar.active {display: block;}
 section {
     min-height: 100vh;
     padding: 10rem 12%;
@@ -205,7 +212,7 @@ span {color: var(--main-color);}
 }
 @keyframes words {
     0%, 25% {content: "Computer Science Major";}
-    26%, 50% {content: "Math Minor";}
+    26%, 50% {content: "Math & Psych Minor";}
     51%, 75% {content: "Data Analyst";}
     76%, 100% {content: "Business Analyst";}
 }
@@ -227,8 +234,8 @@ span {color: var(--main-color);}
 }
 .experience h2 {margin-bottom: 3rem;}
 .timeline-items {
-    max-width: 1300px;  /*Width of boxes*/
-    margin: auto;       /*Margin auto in center*/
+    max-width: 1300px;  /* Width of boxes */
+    margin: auto;       /* Margin auto in center */
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -251,15 +258,15 @@ span {color: var(--main-color);}
 .timeline-item:nth-child(1),
 .timeline-item:nth-child(4),
 .timeline-item:nth-child(6) {
-    padding-left: 0;                 /*On left side of line*/
-    padding-right: calc(50% + 30px); /*Space btwn box and line*/
+    padding-left: 0;                   /* On left side of line */
+    padding-right: calc(50% + 30px);   /* Space btwn box and line */
     text-align: right;
 }
 .timeline-item:nth-child(2),
 .timeline-item:nth-child(3),
 .timeline-item:nth-child(5) {
-    padding-right: 0;               /*On left side of line*/
-    padding-left: calc(50% + 30px); /*Space btwn box and line*/
+    padding-right: 0;                 /* On left side of line */
+    padding-left: calc(50% + 30px);   /* Space btwn box and line */
     text-align: left;
 }
 .timeline-dot {
@@ -284,7 +291,7 @@ span {color: var(--main-color);}
 .timeline-content {
     background-color: var(--bg-color);
     border: 3px solid var(--main-color);
-    padding: 25px 50px;                      /*Padding in box*/
+    padding: 25px 50px;                      /* Padding in box */
     border-radius: 4rem;
     box-shadow: 0 0 10px var(--main-color);
     cursor: pointer;
@@ -355,11 +362,25 @@ span {color: var(--main-color);}
     line-height: 1.2;
     color: var(--icon-color);
 }
+.project-info h5 {           /* Subheading (programming language) in each project box */
+    margin-bottom: -1rem;
+    margin-top: -1rem;
+    font-size: 1.75rem;
+}
 .project-info p {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.7;
     margin: 10px 0 0;   /* Adjusted margin */
+}
+.project-info a {          /* Additional styles for <a> tag */
+    text-decoration: none;     /* Remove default link styling */
+    color: inherit;            /* Ensure the text color is inherited */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
 }
 
 
@@ -589,21 +610,23 @@ span {color: var(--main-color);}
         position: absolute;
         top: 100%;
         right: 0;
-        width: 50%;
+        width: fit-content;
         padding: 1rem 3%;
-        background: rgba(0,0,0,0.8);
-        backdrop-filter: blur(20px);
-        border-bottom-left-radius: 2rem;
-        border-left: 2px solid var(--main-color);
-        border-bottom: 2px solid var(--main-color);
+        background: rgba(0,0,0,0.3);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        z-index: 5;
+        flex-direction: column;
     }
-    .navbar.action {display: block;}  /* Display menu icon when active */
+    .navbar.active {display: flex;}  /* Display menu icon when active */
     .navbar a {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
         color: white;
+        transition: var(--bg-color) 0.3s;
     }
+    .navbar a:hover {background-color: rgba(255, 255, 255, 0.2);}
     .home {
         flex-direction: column-reverse;
         margin: 5rem 4rem;

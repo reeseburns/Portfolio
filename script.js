@@ -23,3 +23,12 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle("bx-x");
     navbar.classList.toggle("active");
 }
+
+document.getElementById('menu-icon').addEventListener('click', function() {
+    var navbar = document.querySelector('.navbar');
+    if (navbar.style.display === 'block') {
+        navbar.style.display = 'none';
+    } else {
+        navbar.style.display = 'block';
+    }
+});
