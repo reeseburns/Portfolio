@@ -1,4 +1,4 @@
-## WELCOME TO MY PORTFOLIO
+## Welcome to my Portfolio!
 
 ### Instructions
 1. Download the zip file
