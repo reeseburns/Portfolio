@@ -1,5 +1,5 @@
-## Welcome to my Portfolio!
+## WELCOME TO MY PORTFOLIO
 
-### INSTRUCTIONS
+### Instructions
 1. Download the zip file
 2. Open the *index.html* file into your browser of choice to access my website portfolio
