@@ -1,4 +1,4 @@
-## Welcome to my Portfolio!
+# Welcome to my Portfolio!
 
 ### Instructions
-Click https://reeseburns.github.io/Portfolio/
+Portfolio: https://reeseburns.github.io/Portfolio/
