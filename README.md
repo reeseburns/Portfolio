@@ -1,5 +1,8 @@
 # Welcome to my Portfolio!
 
-Here's a website about my education, work experience, projects, certificates, resume and my contact information!
+Here's my [portfolio](https://portfolio-7um1.onrender.com/) with information about my education, work experience, projects, and resume!
 
-**Portfolio:** https://reeseburns.github.io/Portfolio/
+### Contact Information
+*Phone:* (415) 994-7823
+
+*Email:* reeseburnzy@gmail.com
