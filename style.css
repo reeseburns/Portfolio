@@ -10,11 +10,11 @@
     font-family: "Optima", sans-serif;
 }
 :root {
-    --bg-color: #374785;          /*#4949498*/
-    --second-bg-color: #495ca7;   /*#7c7c7c*/
+    --bg-color: #0471A6;          /*#374785, dark blue*/
+    --second-bg-color: #3685B5;   /*#495ca7, medium blue*/
     --text-color: white;          /*#white*/
-    --main-color: #A8D0E6;        /*#pink*/
-    --icon-color: pink;
+    --main-color: #89AAE6;        /*#A8D0E6, light blue*/
+    --icon-color: AC80A0;           /*pink*/
 }
 html {
     font-size: 60%;
