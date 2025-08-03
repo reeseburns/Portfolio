@@ -14,7 +14,7 @@
     --second-bg-color: #3685B5;   /*#495ca7, medium blue*/
     --text-color: white;          /*#white*/
     --main-color: #89AAE6;        /*#A8D0E6, light blue*/
-    --icon-color: AC80A0;           /*pink*/
+    --icon-color: #AC80A0;        /*pink*/
 }
 html {
     font-size: 60%;
