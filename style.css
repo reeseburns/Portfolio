@@ -10,10 +10,10 @@
     font-family: "Optima", sans-serif;
 }
 :root {
-    --bg-color: #0471A6;          /*#374785, dark blue*/
-    --second-bg-color: #3685B5;   /*#495ca7, medium blue*/
+    --bg-color: #374785;          /*#374785, dark blue*/
+    --second-bg-color: #495ca7;   /*#495ca7, medium blue*/
     --text-color: white;          /*#white*/
-    --main-color: #89AAE6;        /*#A8D0E6, light blue*/
+    --main-color: #A8D0E6;        /*#A8D0E6, light blue*/
     --icon-color: #AC80A0;        /*pink*/
 }
 html {
