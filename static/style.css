@@ -227,68 +227,94 @@ span {color: var(--main-color);}
 .projects {
     background: var(--second-bg-color);
     padding: 8rem;
-    margin-bottom: 1rem;
+    margin-bottom: 10px; /* Margin below projects */
 }
-.projects h2 {
-    font-size: 5rem;
-    text-align: center;
-    margin: 5rem 0 3rem;
-    color: white;       /* Adjust text color */
-}
-.projects-container {
-    max-width: 1300px;               /* Width of project boxes */
-    margin: auto;                    /* Center align the boxes */
+.projects-box {
+    background-size: cover;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;  /* Adjust spacing between boxes */
-    gap: 2.5rem;                     /* Adjust gap between boxes */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 50%;
 }
-.project-box {
-    flex: 0 1 calc(50% - 1.25rem);   /* Adjust box width for responsiveness */
-    background-color: var(--second-bg-color);
-    color: var(--text-color);
-    border-radius: 3rem;
+.projects .heading {margin-bottom: 4rem;} /* Margin under 'PROJECTS' title */
+.projects .subheading {font-size: 2.8rem;}
+.projects-box img {
+    width: 100%;
+    height: auto;
+    max-height: 180px;
+    object-fit: cover;  /* prevents image from distorting */
+    border-radius: 2rem;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin-bottom: 0;
+}
+.project-item {
+    min-height: 100px;
+    max-width: 600px;
+    background: var(--bg-color);
     border: 3px solid var(--main-color);
-    cursor: pointer;
+    border-radius: 2rem;
+    margin: 0 2rem;
+    padding: 25px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    gap: 1.5rem;
     transition: 0.4s ease-in-out;
-    position: relative;
-    overflow: hidden;                /* Prevent text overflow */
+    text-decoration: none;          /* Remove default link styling */
+    color: inherit;                 /* Ensure the text color is inherited */
 }
-.project-box:hover {
-    background: var(--main-color);
-    color: var(--text-color);
-    border: 5px solid var(--main-color);
-    transform: scale(1.03);
+.project-item:hover {
+    border: 3px solid var(--main-color);
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 0 50px var(--main-color);
 }
-.project-info {padding: 25px;}       /* Padding inside boxes */
-.project-info h4 {
+.project-item h2 {         /* Certificate */
     font-size: 24px;
-    font-weight: 800;
-    line-height: 1.2;
     color: var(--icon-color);
+    text-align: left;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
-.project-info h5 {      /* Date */
-    font-size: 20px;
-    margin-bottom: -1rem;
-    margin-top: -1rem;
-    color: var(--icon-color);
-    font-weight: 500;
-}
-.project-info ul {      /*Bullet points*/
-    font-size: 19px;
-    font-weight: 400;
-    line-height: 1.7;
-    margin: 10px 0 0;   /* Adjusted margin */
-}
-.project-info a {          /* Additional styles for <a> tag */
-    text-decoration: none;     /* Remove default link styling */
-    color: inherit;            /* Ensure the text color is inherited */
+.project-item p {           /* Additional styles for <a> tag */
+    text-decoration: none;  /* Remove default link styling */
+    color: inherit;         /* Ensure the text color is inherited */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
+    font-size: 19px;
+    color: white;
+    text-align: left;
 }
+.skill {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--main-color);    /* main = light blue */
+    border-radius: 1rem;
+    font-size: 14px;
+    color: var(--text-color);
+    border: 2px solid transparent;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+}
+.skill:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 50px var(--main-color); /* main = light blue */
+}
+.skill-group {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
 
 /* ----------EXPERIENCE---------- */
 .heading {
@@ -350,7 +376,7 @@ span {color: var(--main-color);}
 }
 .timeline-date {
     font-size: 20px;
-    font-weight: 800;
+    font-weight: 500;
     color: var(--icon-color);
     margin: 6px 0 15px;
 }
