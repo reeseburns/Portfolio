@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reese Burns Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="static/style.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 
@@ -44,76 +44,86 @@
             </div>
 
             <div class="btn-group">
-                <a href="#" class="btn">Hire</a>
+                <a href="http://www.linkedin.com/in/reeseburns" class="btn">Hire</a>
                 <a href="#contact" class="btn">Contact</a>
             </div>
 
         </div>
             <div class="home-img">
-                <img src="ProfilePhoto.jpg" alt="">
+                <img src="data/ProfilePhoto.jpg" alt="">
             </div>
     </section>
 
 
     <!-- PROJECTS -->
     <section class="projects" id="projects">
-        <h2 class="heading">PROJECTS</h2>
+        <div class="projects-box">
+            <h2 class="heading">PROJECTS</h2>
+            <div class="wrapper">
+                <div class="project-item">
+                    <a href="https://github.com/reeseburns?tab=repositories" target="_blank" rel="noopener noreferrer">
+                        <i class="project-box"></i>
+                        <img src="data/github.jpeg" alt="">
+                        <h2>Healthcare Document Classification</h2>
+                        <p>Built a pipeline to classify clinical tokens using Bio_ClinicalBERT, achieving a 93.1% 
+                            F1 score for medical entity recognition.</p>
 
-        <div class="projects-container">
-            <div class="project-box">
-                <div class="project-info">
-                    <a>
-                        <h4><strong>Healthcare Document Classification</strong></h4>
-                        <h5><i>Feb - May 2025</i></h5>
-                        <ul>
-                            <li>Built a machine learning pipeline to classify medical tokens using a fine-tuned <b>Bio_ClinicalBERT model</b></li>
-                            <li>Generated and labeled synthetic clinical sentences using <b>BIO tagging</b> for <b>entity recognition</b></li>
-                            <li>Achieved 93.1% F1 score on test data, ensuring accurate classification without manual labels</li>
-                        </ul>
+                        <div class="skill-group">
+                            <a class="skill">NLP</a>
+                            <a class="skill">NER</a>
+                            <a class="skill">BERT</a>
+                            <a class="skill">APIs</a>
+                        </div>
                     </a>
                 </div>
-            </div>
-
-            <div class="project-box">
-                <div class="project-info">
+    
+                <div class="project-item">
                     <a href="https://github.com/reeseburns/Ocean-Heat-Flux-Analysis" target="_blank" rel="noopener noreferrer">
-                        <h4><strong>Ocean Heat Flux Analysis</strong></h4>
-                        <h5><i>Feb - May 2025</i></h5>
-                        <ul>
-                            <li>Visualized global latent heat flux trends using <b>Cartopy</b>, <b>seasonal overlays</b>, and <b>time-series analyses</b></li>
-                            <li>Analyzed correlations between temperature, salinity, and heat flux to identify dominant drivers during
-                                ENSO years</li>
-                        </ul>
+                        <i class="project-box"></i>
+                        <img src="data/github2.jpg" alt="">
+                        <h2>Ocean Heat Flux Analysis</h2>
+                        <p>Analyzed global heat flux trends with Cartopy and time-series plots to uncover seasonal climate patterns during ENSO years.</p>
+
+                        <div class="skill-group">
+                            <a class="skill">Pandas</a>
+                            <a class="skill">Matplotlib</a>
+                            <a class="skill">Seaborn</a>
+                            <a class="skill">Cartopy</a>
+                        </div>
                     </a>
                 </div>
-            </div>
 
-            <div class="project-box">
-                <div class="project-info">
+                <div class="project-item">
                     <a href="https://github.com/reeseburns/NYC-Bars-WebApp" target="_blank" rel="noopener noreferrer">
-                        <h4><strong>NYC Bars Web-App</strong></h4>
-                        <h5><i>Oct 2024 - Jan 2025</i></h5>
-                        <ul>
-                            <li>Developed a <b>full-stack</b>, end-to-end website that manages and organizes NYC bars by various features,
-                                enhancing user exploration and discovery</li>
-                            <li>Utilized <b>Docker</b> containers to create a portable and scalable deployment environment</li>
-                            <li>Implemented dynamic search, filtering, and personalized recommendations to improve user experience</li>
-                        </ul>
+                        <i class="project-box"></i>
+                        <img src="data/github2.jpg" alt="">
+                        <h2>NYC Bars Web-App</h2>
+                        <p>Developed a full-stack Flask app to explore NYC bars with personalized recommendations, filters, and Docker deployment.</p>
+
+                        <div class="skill-group">
+                            <a class="skill">Flask</a>
+                            <a class="skill">MongoDB</a>
+                            <a class="skill">Docker</a>
+                            <a class="skill">HTML</a>
+                            <a class="skill">CSS</a>
+                            <a class="skill">JavaScript</a>
+                        </div>
                     </a>
                 </div>
-            </div>
-
-            <div class="project-box">
-                <div class="project-info">
+    
+                <div class="project-item">
                     <a href="https://github.com/reeseburns/Predicting-Airbnb-Prices" target="_blank" rel="noopener noreferrer">
-                        <h4><strong>Predicting Airbnb Prices</strong></h4>
-                        <h5><i>Nov - Dec 2024</i></h5>
-                        <ul>
-                            <li>Conducted <b>EDA</b> to identify trends in listing prices based on property type, location, and amenities</li>
-                            <li>Optimized regression and deep learning models like <b>Multi-Linear Regression</b>, <b>Gradient Boosting</b>, and <b>Deep
-                                Neural Networks</b> to predict airbnb prices</li>
-                            <li>Visualized key insights to determine significant predictors of airbnb prices across Europe</li>
-                        </ul>
+                        <i class="project-box"></i>
+                        <img src="data/github.jpeg" alt="">
+                        <h2>Predicting Airbnb Prices</h2>
+                        <p>Trained regression and deep learning models to predict Airbnb prices, revealing key drivers like location, amenities, and property type.</p>
+
+                        <div class="skill-group">
+                            <a class="skill">Scikit-Learn</a>
+                            <a class="skill">TensorFlow</a>
+                            <a class="skill">Seaborn</a>
+                            <a class="skill">SQL</a>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -182,13 +192,13 @@
                 <div class="certificate-item">
                     <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/EAFIBOXEBNOH" target="_blank" rel="noopener noreferrer">
                         <i class="certificate-box"></i>
-                        <img src="upenn_wharton.png" alt="">
+                        <img src="data/upenn_wharton.png" alt="">
                         <h2>Financial & Quantitative Modeling</h2>
                         <p><i>July 2025</i></p>
                         <ul class="description">
-                            <li>Built and analyzed financial models in Excel to evaluate investments, companies, and projects</li>
+                            <li>Built and analyzed <b>financial models</b> in <b>Excel</b> to evaluate investments, companies, and projects</li>
                             <li>Explored key finance concepts: discounted cash flow (DCF), risk and return, cost of capital, and capital budgeting</li>
-                            <li>Applied quantitative methods to assess uncertainty, forecast outcomes, and support data-driven financial decisions</li>
+                            <li>Applied <b>quantitative methods</b> to assess uncertainty, forecast outcomes, and support data-driven financial decisions</li>
                         </ul>
                     </a>
                 </div>
@@ -196,13 +206,13 @@
                 <div class="certificate-item">
                     <a href="https://www.finra.org/registration-exams-ce/qualification-exams/securities-industry-essentials-exam#overview" target="_blank" rel="noopener noreferrer">
                         <i class="certificate-box"></i>
-                        <img src="sie.jpeg" alt="">
+                        <img src="data/sie.jpeg" alt="">
                         <h2>Securities Index Exam (SIE)</h2>
                         <p><i>Expected September 2025</i></p>
                         <ul class="description">
-                            <li>Gain knowledge of the securities industry: products like stocks, bonds, mutual funds, and options</li>
+                            <li>Gain knowledge of the <b>securities industry</b>: products like stocks, bonds, mutual funds, and options</li>
                             <li>Learn key concepts in market structure, regulatory agencies, and ethical standards</li>
-                            <li>Prepare for industry roles by understanding basic trading, customer accounts, and risk management principles</li>
+                            <li>Understand basic trading, customer accounts, and risk management principles</li>
                         </ul>
                     </a>
                 </div>
@@ -250,6 +260,6 @@
         <p class="copyright">Design concept by Amelia Morgan | Modified by Reese Burns</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="static/script.js"></script>
 </body>
 </html>
